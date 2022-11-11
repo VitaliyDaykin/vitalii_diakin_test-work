@@ -1,0 +1,96 @@
+//====================================================================================================
+.cart-box {
+    background-color: #fff;
+    position: relative;
+    padding: rem(100) rem(0);
+
+    @media (max-width: $tablet) {
+        padding: rem(50) rem(20);
+    }
+    &::after {
+        content: "";
+        background: url("@img/bg.png") 210px 68px no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: rem(0);
+        top: rem(0);
+    }
+    // .cart-box__container
+    &__container {
+    }
+
+    .items-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    // .cart-box__item
+    &__item {
+        padding: rem(24);
+        flex: 0 1 31.69%;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        margin-bottom: rem(30);
+        @media (max-width: $tablet) {
+            flex: 0 1 45%;
+        }
+        @media (max-width: $mobile) {
+            flex: 0 1 100%;
+        }
+    }
+}
+.cart {
+    display: block;
+    background-color: #fff;
+    z-index: 99;
+    @media (any-hover: hover) {
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+    // .cart__images
+    &__images {
+        margin-bottom: rem(26);
+        & img {
+            display: block;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
+    // .cart__info
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    // .cart__info-text
+    &__info-text {
+        & h3 {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 140%;
+            margin-bottom: rem(8);
+        }
+
+        & p {
+            font-size: 15px;
+            line-height: 140%;
+            max-width: 252px;
+            color: rgba($mainColor, 0.8);
+            & span {
+                font-weight: 500;
+            }
+        }
+    }
+    // .cart__info-icon
+    &__info-icon {
+        & img {
+            display: block;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
+
+//====================================================================================================
