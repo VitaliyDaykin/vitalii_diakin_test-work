@@ -160,29 +160,60 @@ body::after {
     }
 }
 
-.popup-mini-slider {
-}
-.popup-mini-slider__wrapper {
-}
-.popup-mini-slider__slide {
-    transition: opacity 0.3s ease 0s;
-}
+// .popup-mini-slider {
+// }
+// .popup-mini-slider__wrapper {
+// }
+// .popup-mini-slider__slide {
+//     transition: opacity 0.3s ease 0s;
+// }
 // .popup-mini-slider__slide.swiper-slide-thumb-active {
 //     opacity: 1;
 // }
 
-.popup-mini-slider__image {
-    position: relative;
-    padding: 0px 0px 153px 0px;
-    cursor: pointer;
-    margin: 20px 0;
-}
-.popup-mini-slider__image img {
-    object-fit: cover;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border-radius: 4px;
+// .popup-mini-slider__image {
+//     position: relative;
+//     padding: 0px 0px 153px 0px;
+//     cursor: pointer;
+//     margin: 20px 0;
+// }
+// .popup-mini-slider__image img {
+//     object-fit: cover;
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+//     border-radius: 4px;
+//}
+
+.popup-mini-slider-safety,
+.popup-mini-slider,
+.popup-mini-slider-entertainment,
+.popup-mini-slider-location,
+.popup-mini-slider-food,
+.popup-mini-slider-accommodation {
+    // .popup-mini-slider-safety__wrapper
+    &__wrapper {
+    }
+    // .popup-mini-slider-safety__slide
+    &__slide {
+        transition: opacity 0.3s ease 0s;
+    }
+    // .popup-mini-slider-safety__image
+    &__image {
+        position: relative;
+        padding: 0px 0px 153px 0px;
+        cursor: pointer;
+        margin: 20px 0;
+    }
+    & img {
+        object-fit: cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border-radius: 4px;
+    }
 }
