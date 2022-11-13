@@ -3558,6 +3558,186 @@
             },
             on: {}
         });
+        if (document.querySelector(".popups-safety__slider")) new core(".popups-safety__slider", {
+            modules: [ Navigation, Thumb ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            autoHeight: true,
+            speed: 800,
+            loop: true,
+            navigation: {
+                prevEl: ".swiper-button-prev",
+                nextEl: ".swiper-button-next"
+            },
+            thumbs: {
+                swiper: {
+                    el: ".popup-mini-slider-safety",
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    breakpoints: {
+                        480: {
+                            slidesPerView: 2
+                        },
+                        768: {
+                            slidesPerView: 3
+                        },
+                        992: {
+                            slidesPerView: 3
+                        },
+                        1268: {
+                            slidesPerView: 3
+                        }
+                    }
+                }
+            },
+            on: {}
+        });
+        if (document.querySelector(".popups-entertainment__slider")) new core(".popups-entertainment__slider", {
+            modules: [ Navigation, Thumb ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            autoHeight: true,
+            speed: 800,
+            loop: true,
+            navigation: {
+                prevEl: ".swiper-button-prev",
+                nextEl: ".swiper-button-next"
+            },
+            thumbs: {
+                swiper: {
+                    el: ".popup-mini-slider-entertainment",
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    breakpoints: {
+                        480: {
+                            slidesPerView: 2
+                        },
+                        768: {
+                            slidesPerView: 3
+                        },
+                        992: {
+                            slidesPerView: 3
+                        },
+                        1268: {
+                            slidesPerView: 3
+                        }
+                    }
+                }
+            },
+            on: {}
+        });
+        if (document.querySelector(".popups-location__slider")) new core(".popups-location__slider", {
+            modules: [ Navigation, Thumb ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            autoHeight: true,
+            speed: 800,
+            loop: true,
+            navigation: {
+                prevEl: ".swiper-button-prev",
+                nextEl: ".swiper-button-next"
+            },
+            thumbs: {
+                swiper: {
+                    el: ".popup-mini-slider-location",
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    breakpoints: {
+                        480: {
+                            slidesPerView: 2
+                        },
+                        768: {
+                            slidesPerView: 3
+                        },
+                        992: {
+                            slidesPerView: 3
+                        },
+                        1268: {
+                            slidesPerView: 3
+                        }
+                    }
+                }
+            },
+            on: {}
+        });
+        if (document.querySelector(".popups-accommodation__slider")) new core(".popups-accommodation__slider", {
+            modules: [ Navigation, Thumb ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            autoHeight: true,
+            speed: 800,
+            loop: true,
+            navigation: {
+                prevEl: ".swiper-button-prev",
+                nextEl: ".swiper-button-next"
+            },
+            thumbs: {
+                swiper: {
+                    el: ".popup-mini-slider-accommodation",
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    breakpoints: {
+                        480: {
+                            slidesPerView: 2
+                        },
+                        768: {
+                            slidesPerView: 3
+                        },
+                        992: {
+                            slidesPerView: 3
+                        },
+                        1268: {
+                            slidesPerView: 3
+                        }
+                    }
+                }
+            },
+            on: {}
+        });
+        if (document.querySelector(".popups-food__slider")) new core(".popups-food__slider", {
+            modules: [ Navigation, Thumb ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            autoHeight: true,
+            speed: 800,
+            loop: true,
+            navigation: {
+                prevEl: ".swiper-button-prev",
+                nextEl: ".swiper-button-next"
+            },
+            thumbs: {
+                swiper: {
+                    el: ".popup-mini-slider-food",
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    breakpoints: {
+                        480: {
+                            slidesPerView: 2
+                        },
+                        768: {
+                            slidesPerView: 3
+                        },
+                        992: {
+                            slidesPerView: 3
+                        },
+                        1268: {
+                            slidesPerView: 3
+                        }
+                    }
+                }
+            },
+            on: {}
+        });
     }
     window.addEventListener("load", (function(e) {
         initSliders();

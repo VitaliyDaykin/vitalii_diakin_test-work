@@ -13,6 +13,26 @@ if (!defined('_S_VERSION')) {
 	define('_S_VERSION', '1.0.0');
 }
 
+
+## Отключает Гутенберг (новый редактор блоков в WordPress).
+## ver: 1.2
+if ('disable_gutenberg') {
+	remove_theme_support('core-block-patterns'); // WP 5.5
+
+	add_filter('use_block_editor_for_post_type', '__return_false', 100);
+
+	// отключим подключение базовых css стилей для блоков
+	// ВАЖНО! когда выйдут виджеты на блоках или что-то еще, эту строку нужно будет комментировать
+	remove_action('wp_enqueue_scripts', 'wp_common_block_scripts_and_styles');
+
+	// Move the Privacy Policy help notice back under the title field.
+	add_action('admin_init', function () {
+		remove_action('admin_notices', ['WP_Privacy_Policy_Content', 'notice']);
+		add_action('edit_form_after_title', ['WP_Privacy_Policy_Content', 'notice']);
+	});
+}
+
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -149,6 +169,9 @@ function ukrainian_box_scripts()
 	wp_enqueue_script('app.min', get_template_directory_uri() . '/assets/js/app.min.js', array(), '1.0.0', true);
 }
 add_action('wp_enqueue_scripts', 'ukrainian_box_scripts');
+
+add_image_size('card-image', 346, 192, true);
+add_image_size('card-icons', 58, 58, true);
 
 /**
  * Implement the Custom Header feature.
