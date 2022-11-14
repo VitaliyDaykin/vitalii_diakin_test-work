@@ -250,7 +250,12 @@ body::after {
   padding: 0rem 0rem 0rem 2.625rem;
 }
 
-.popups__slide-image img {
+.popups__slide-image img,
+.popups-location__slide-image img,
+.popups-accommodation__slide-image img,
+.popups-entertainment__slide-image img,
+.popups-food__slide-image img,
+.popups-safety__slide-image img {
   display: block;
   width: 100%;
 }

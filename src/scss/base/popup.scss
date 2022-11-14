@@ -95,7 +95,12 @@ body::after {
     }
 }
 
-.popups {
+.popups,
+.popups-location,
+.popups-accommodation,
+.popups-entertainment,
+.popups-food,
+.popups-safety {
     // .popups__slider
     &__slider {
     }

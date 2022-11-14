@@ -170,8 +170,23 @@ function ukrainian_box_scripts()
 }
 add_action('wp_enqueue_scripts', 'ukrainian_box_scripts');
 
+// ACF Pro Options Page
+
+if (function_exists('acf_add_options_page')) {
+
+	acf_add_options_page(array(
+		'page_title' => 'Theme General Settings',
+		'menu_title' => 'Theme Settings',
+		'menu_slug'  => 'theme-general-settings',
+		'capability' => 'edit_posts',
+		'redirect'   => false
+	));
+}
+
 add_image_size('card-image', 346, 192, true);
 add_image_size('card-icons', 58, 58, true);
+add_image_size('card-popup-image', 712, 472, true);
+add_image_size('card-popup-image-preview', 228, 152, true);
 
 /**
  * Implement the Custom Header feature.
