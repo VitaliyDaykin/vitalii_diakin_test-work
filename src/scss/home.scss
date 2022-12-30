@@ -94,3 +94,122 @@
 }
 
 //====================================================================================================
+.baner-box {
+    @include adaptiveValue("padding-bottom", 80, 30);
+}
+.baner {
+    // .baner__container
+    &__container {
+        position: relative;
+        &::before {
+            content: "";
+            background: url("@img/baner/present.png") 0 0 no-repeat;
+            max-width: 100%;
+            width: rem(180);
+            height: rem(180);
+            bottom: rem(-40);
+            right: rem(124);
+            position: absolute;
+            z-index: 5;
+        }
+    }
+    // .baner__wrapper
+    &__wrapper {
+        min-height: rem(400);
+        background: url("@img/baner/baner-bg-uk.jpg") center center / cover no-repeat;
+        border-radius: rem(16);
+        display: flex;
+        padding: rem(66) rem(66) rem(0) rem(71);
+        position: relative;
+        overflow: hidden;
+    }
+    // .baner__image
+    &__image {
+        flex: 0 0 30%;
+        margin-right: rem(15);
+    }
+    // .baner__info
+    &__info {
+        flex: 1 1 auto;
+    }
+    // .baner__ribbon
+    &__ribbon {
+        font-weight: 700;
+        font-size: rem(23);
+        line-height: 100%;
+        width: 325px;
+        padding: 10px;
+        position: absolute;
+        text-align: center;
+        color: #f0f0f0;
+        top: 50px;
+        right: -100px;
+        transform: rotate(45deg);
+        background-color: #77b414;
+    }
+}
+.info-baner {
+    // .info-baner__title
+    &__title {
+        color: #fff;
+        font-weight: 600;
+        @include adaptiveValue("font-size", 66, 30);
+        line-height: 118%;
+
+        span {
+            color: #77b414;
+        }
+        img {
+            vertical-align: initial;
+            margin-right: rem(5);
+            margin-left: rem(-12);
+        }
+        &:not(:last-child) {
+            margin-bottom: rem(48);
+        }
+    }
+    // .info-baner__footer
+    &__footer {
+    }
+}
+.footer-info-baner {
+    display: flex;
+    align-items: center;
+    gap: rem(62);
+    // .footer-info-baner__title
+    &__title {
+        color: #fff;
+        font-weight: 500;
+        @include adaptiveValue("font-size", 32, 24);
+        line-height: 130%;
+        flex: 0 0 390px;
+
+        span {
+            color: #77b414;
+        }
+    }
+    // .footer-info-baner__popup
+    &__popup {
+        & .btn {
+            color: #fff;
+            border-radius: rem(5);
+            font-weight: 600;
+            font-size: rem(14);
+            line-height: math.div(17, 14);
+            padding: rem(25) rem(40);
+            background: #77b414;
+            &:hover {
+                background: linear-gradient(to right, #7cbb17, #9bd341 30%, #7cbb17 60%) #77b414;
+                animation: move 0.8s linear infinite;
+            }
+            @keyframes move {
+                from {
+                    background-position: -240px 0;
+                }
+                to {
+                    background-position: 120% 0;
+                }
+            }
+        }
+    }
+}
