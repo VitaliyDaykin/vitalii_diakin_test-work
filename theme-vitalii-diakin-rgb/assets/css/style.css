@@ -1,0 +1,23 @@
+.popup__content-gallery {
+    -webkit-box-flex: 1;
+    -ms-flex: 0 0 56.5%;
+    flex: 0 0 56.5%;
+}
+
+.swiper-slide-thumb-active .popup-mini-slider__image img,
+.swiper-slide-thumb-active .popup-mini-slider-food__image img,
+.swiper-slide-thumb-active .popup-mini-slider-location__image img,
+.swiper-slide-thumb-active .popup-mini-slider-accommodation__image img,
+.swiper-slide-thumb-active .popup-mini-slider-entertainment__image img,
+.swiper-slide-thumb-active .popup-mini-slider-safety__image img {
+    border: 3px solid #f86d2e;
+}
+
+.popups__slide-image img,
+.popups-location__slide-image img,
+.popups-food__slide-image img,
+.popups-entertainment__slide-image img,
+.popups-accommodation__slide-image img,
+.popups-safety__slide-image img {
+    height: auto;
+}
